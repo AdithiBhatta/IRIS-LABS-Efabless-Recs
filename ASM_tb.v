@@ -6,7 +6,7 @@ reg clk, stop;
   reg [N-1:0] B;
   wire [2*N-1:0] AQ;
 
-  ASM dut(clk, rst, A, B, AQ);
+  ASM dut(clk, stop, A, B, AQ);
 
 initial 
 begin
