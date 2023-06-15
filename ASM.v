@@ -9,7 +9,7 @@ input clk,stop;
   output reg [2*N-1:0]AQ;
   reg [2*N-1:0]A1;
   reg [N-1:0]B1;
-always@(posedge clk or posedge rst )
+	always@(posedge clk or posedge stop )
 begin
   if (stop==1)
 		begin
