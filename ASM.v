@@ -7,7 +7,7 @@ input clk,stop;
   input [N-1:0] B;
   
   output reg [2*N-1:0]AQ;
-  reg [2*N-1:0]A1;
+	reg [2*N-1:0]A1;
   reg [N-1:0]B1;
 	always@(posedge clk or posedge stop )
 begin
